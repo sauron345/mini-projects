@@ -1,7 +1,7 @@
 from json_operations import get_expenses
 from expense_operations import show_expenses, add_expense, show_stats, delete_expense
 from datetime import datetime
-from color_msg import Message as msg
+from color_message import Message as msg
 import sys
 
 

@@ -1,5 +1,5 @@
 import sys
-from color_msg import Message as msg
+from color_message import Message as msg
 
 
 def main() -> None:

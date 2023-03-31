@@ -1,6 +1,6 @@
 from generator_of_chars import generate_low_letters, generate_upp_letters, generate_digits
 from check_correctness import check_correctness_of_chars
-from color_msg import Message as msg
+from color_message import Message as msg
 from random import sample
 
 

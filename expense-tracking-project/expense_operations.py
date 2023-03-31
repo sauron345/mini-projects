@@ -1,5 +1,5 @@
 from json_operations import load_json_data, save_data_to_json
-from color_msg import Message as msg
+from color_message import Message as msg
 
 
 def show_expenses(month: str, expenses: list) -> None:

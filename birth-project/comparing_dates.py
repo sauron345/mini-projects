@@ -1,6 +1,6 @@
 from datetime import date
 from check_correctness import verify_correctness
-from color_msg import Message as msg
+from color_message import Message as msg
 
 
 def compare_birth_to_curr_date(birth_date: list) -> bool:

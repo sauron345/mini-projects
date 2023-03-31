@@ -2,7 +2,7 @@ from datetime import date
 from birth_weekday import get_weekday
 from check_correctness import check_list, check_day, check_month, check_year
 from comparing_dates import compare_birth_to_curr_date
-from color_msg import Message as msg
+from color_message import Message as msg
 import sys
 
 

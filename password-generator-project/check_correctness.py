@@ -1,4 +1,4 @@
-from color_msg import Message as msg
+from color_message import Message as msg
 
 
 def check_correctness_of_chars(type_of_chars: str, min_required: int) -> int:

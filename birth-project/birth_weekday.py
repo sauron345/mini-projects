@@ -1,5 +1,5 @@
 from datetime import datetime
-from color_msg import Message as msg
+from color_message import Message as msg
 
 
 def get_weekday(birth_date: list) -> None:

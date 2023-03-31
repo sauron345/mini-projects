@@ -1,5 +1,5 @@
 from random import randint
-from color_msg import Message as msg
+from color_message import Message as msg
 
 
 def main_loop(tools: list) -> None:

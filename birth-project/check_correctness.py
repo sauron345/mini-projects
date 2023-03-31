@@ -1,5 +1,5 @@
 from datetime import date
-from color_msg import Message as msg
+from color_message import Message as msg
 
 
 def verify_correctness(correct, correct2=None, correct3=None) -> bool:
