@@ -1,9 +1,8 @@
 from random import randint
 from color_msg import Message as msg
 
-tools = ['rock', 'paper', 'scissors']
 
-try:
+def main_loop(tools: list) -> None:
 
     while True:
         won, lost, won_per, lost_per, level = 0, 0, 0, 0, 1
@@ -39,5 +38,10 @@ try:
         if choice.lower() == 'n':
             break
 
-except KeyboardInterrupt:
-    print(msg.error('\nKeyboard interrupted and finished the program'))
+
+if __name__ == '__main__':
+    tools = ['rock', 'paper', 'scissors']
+    try:
+        main_loop(tools)
+    except KeyboardInterrupt:
+        print(msg.error('\nKeyboard interrupted and finished the program'))

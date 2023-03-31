@@ -5,7 +5,7 @@ from color_msg import Message as msg
 import sys
 
 
-def main_loop(expenses, expense_id):
+def main_loop(expenses: list, expense_id: int) -> None:
 
     while True:
         month = input('Choose a month [1-12] (exit - n): ')

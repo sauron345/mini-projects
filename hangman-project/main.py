@@ -1,12 +1,12 @@
 import sys
 from color_msg import Message as msg
 
-trials = 5
-solution = ['s', 'e', 'b', 's', 'o', 'n']
-my_choices = []
-correct_letters = ['_' for _ in solution]
 
-try:
+def main() -> None:
+    trials = 5
+    solution = ['s', 'e', 'b', 's', 'o', 'n']
+    my_choices = []
+    correct_letters = ['_' for _ in solution]
 
     while True:
         choice = input(f"Enter letter and resolve puzzle {correct_letters}: ")
@@ -48,5 +48,9 @@ try:
         else:
             print(msg.error('Only letters are allowed not digits or other characters'))
 
-except KeyboardInterrupt:
-    print(msg.error('\nKeyboard interrupted and finished the program'))
+
+if __name__ == '__main__':
+    try:
+        main()
+    except KeyboardInterrupt:
+        print(msg.error('\nKeyboard interrupted and finished the program'))

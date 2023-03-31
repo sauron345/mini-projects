@@ -1,21 +1,22 @@
 import json
 
 
-def load_json_data():
+def load_json_data() -> list:
     with open('expenses.json') as f:
         json_expenses = json.load(f)
 
     return json_expenses
 
 
-def save_data_to_json(data):
+def save_data_to_json(data: list) -> None:
     with open('expenses.json', 'w') as f:
         json.dump(data, f, indent=4)
 
 
-def get_expenses(expenses=None):
+def get_expenses(expenses: None = None) -> list:
     if expenses is None:
         expenses = []
+
     try:
         json_expenses = load_json_data()
     except json.decoder.JSONDecodeError:

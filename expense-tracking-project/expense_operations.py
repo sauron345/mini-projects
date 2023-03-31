@@ -2,7 +2,7 @@ from json_operations import load_json_data, save_data_to_json
 from color_msg import Message as msg
 
 
-def show_expenses(month, expenses):
+def show_expenses(month: str, expenses: list) -> None:
     if expenses:
         json_expenses = load_json_data()
 
@@ -20,7 +20,7 @@ def show_expenses(month, expenses):
         print(msg.error(f"You don't have any expenses"))
 
 
-def save_expense(expenses):
+def save_expense(expenses: list) -> None:
     data = []
 
     for expense_id, expense_amount, expense_type, month in expenses:
@@ -34,7 +34,7 @@ def save_expense(expenses):
     save_data_to_json(data)
 
 
-def add_expense(month, expenses, expense_id):
+def add_expense(month: str, expenses: list, expense_id: int) -> None:
     expense_amount = input('Enter amount [zł]: ')
 
     if not expense_amount.isdigit():
@@ -47,7 +47,7 @@ def add_expense(month, expenses, expense_id):
         save_expense(expenses)
 
 
-def show_stats(selected_month, expenses):
+def show_stats(selected_month: str, expenses: list) -> None:
     """Stats of selected month and all month"""
     total_amount_of_selected_month = sum(expense_amount for _, expense_amount, _, month in expenses
                                          if month == selected_month)
@@ -74,7 +74,7 @@ def show_stats(selected_month, expenses):
     print(msg.info(f"Average of expenses [zł]: {average_expense}"))
 
 
-def delete_expense(month, expenses):
+def delete_expense(month: str, expenses: list) -> None:
     if expenses:
         json_data = load_json_data()
         have_expense = False

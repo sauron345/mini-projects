@@ -6,38 +6,38 @@ from color_msg import Message as msg
 import sys
 
 
-def main_loop():
+def main_loop() -> None:
 
     while True:
-        date_of_birth = input("Enter your date of your birth (or 'n' to exit) in sequence day-month-year: ")
+        birth_date = input("Enter your date of your birth (or 'n' to exit) in sequence day-month-year: ")
         # ['1', '12', '2020']
-        if date_of_birth.lower() == 'n':
+        if birth_date.lower() == 'n':
             sys.exit()
         else:
-            date_of_birth = date_of_birth.split('-')
+            birth_date = birth_date.split('-')
 
         # check if items of list is numeric
-        response = check_list(date_of_birth)
+        response = check_list(birth_date)
         if response is False:
             continue
 
-        if (len(date_of_birth) < 4) and (len(date_of_birth) > 2):
-            day_of_birth = date_of_birth[0]
-            ver_day = check_day(day_of_birth)
+        if (len(birth_date) < 4) and (len(birth_date) > 2):
+            birth_day = birth_date[0]
+            ver_day = check_day(birth_day)
 
-            month_of_birth = date_of_birth[1]
-            ver_month = check_month(month_of_birth)
+            birth_month = birth_date[1]
+            ver_month = check_month(birth_month)
 
-            year_of_birth = date_of_birth[2]
-            ver_year = check_year(year_of_birth)
+            birth_year = birth_date[2]
+            ver_year = check_year(birth_year)
 
-            if int(year_of_birth) == date.today().year or int(year_of_birth) > date.today().year:
-                compare_response = compare_birth_to_curr_date(date_of_birth)
+            if int(birth_year) == date.today().year or int(birth_year) > date.today().year:
+                compare_response = compare_birth_to_curr_date(birth_date)
                 if compare_response is False:
                     continue
 
             if ver_day and ver_month and ver_year:
-                get_weekday(date_of_birth)
+                get_weekday(birth_date)
                 break
 
         else:

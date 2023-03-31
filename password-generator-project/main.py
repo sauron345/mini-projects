@@ -4,19 +4,19 @@ from color_msg import Message as msg
 from random import sample
 
 
-def main_loop():
+def main_loop() -> None:
 
     while True:
-        num_of_low_letters = check_correctness_of_chars("lowercase letters", 10)
+        low_letters_num = check_correctness_of_chars("lowercase letters", 10)
 
-        num_of_upp_letters = check_correctness_of_chars("uppercase letters", 1)
+        upp_letters_num = check_correctness_of_chars("uppercase letters", 1)
 
-        num_of_digits = check_correctness_of_chars("digits", 1)
+        digits_num = check_correctness_of_chars("digits", 1)
 
         # generate random characters
-        rand_low_letters_list = list(generate_low_letters(num_of_low_letters))
-        rand_upp_letters_list = list(generate_upp_letters(num_of_upp_letters))
-        rand_digits_list = list(generate_digits(num_of_digits))
+        rand_low_letters_list = list(generate_low_letters(low_letters_num))
+        rand_upp_letters_list = list(generate_upp_letters(upp_letters_num))
+        rand_digits_list = list(generate_digits(digits_num))
 
         # convert list to string
         low_letters = ''.join(rand_low_letters_list)
