@@ -1,0 +1,26 @@
+[
+    {
+        "id": 5,
+        "amount": 123,
+        "type": "entertainment",
+        "month": "January"
+    },
+    {
+        "id": 6,
+        "amount": 23,
+        "type": "eating",
+        "month": "December"
+    },
+    {
+        "id": 7,
+        "amount": 231,
+        "type": "home",
+        "month": "January"
+    },
+    {
+        "id": 8,
+        "amount": 2321,
+        "type": "home",
+        "month": "January"
+    }
+]

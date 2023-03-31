@@ -1,0 +1,37 @@
+[
+  {
+    "question": "In which year was appeared Python?",
+    "a": "2003",
+    "b": "1991",
+    "c": "1989",
+    "d": "1991"
+  },
+  {
+    "question": "Who developed Python?",
+    "a": "Jeff Bezos",
+    "b": "Guido van Rossum",
+    "c": "James Gosling",
+    "d": "Bill Gates"
+  },
+  {
+    "question": "How create a tuple with element?",
+    "a": "tup = (1)",
+    "b": "tup = 1,",
+    "c": "tup = 1",
+    "d": "tup = {1}"
+  },
+  {
+    "question": "How to add element to created frozenset?",
+    "a": "frozSet.add('s')",
+    "b": "frozSet.union('s')",
+    "c": "frozSet.insert(1, 's')",
+    "d": "frozenset is immutable"
+  },
+  {
+    "question": "Enter index of element 'a', letters = {'s', 'a', 'r', 'd'}?",
+    "a": "in set elements are unordered",
+    "b": "1",
+    "c": "2",
+    "d": "set1[1]"
+  }
+]
